@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Fugaz+One&family=Source+Sans+3&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <img class="logo mx-3" src="./assets/sun.png" alt="weather logo">
+                    <b class="m-0 navTxt">Weather</b>
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <h1 class="text-center">Favorites</h1>
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container py-5">
+        <div class="row">
+            <div class="col">
+                <h2>Local Time:</h2>
+                <h2>00:00AM</h2>
+            </div>
+            <div class="col ">
+                <div class="row">
+                    <h1 class="text-center"> Manteca, CA</h1>
+                </div>
+                <div class="row">
+                    <h2 class="text-center">Mon, November 27, 2023</h2>
+                </div>
+
+            </div>
+            <div class="col d-flex justify-content-end">
+                <img src="./assets/star_unfilled.png" alt="star unfilled">
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container bg-white">
+        <div class="row">
+            <div class="col border d-flex justify-content-end">
+                <img class="" src="./assets/rain.png" alt="rain cloud">
+
+            </div>
+            <div class="col border d-flex align-items-center">
+                <div>
+                    <b id="tempTxt">62°F</b>
+                    <br>
+                    <p id="feelsTxt">Feels like 62°F</p>
+                </div>
+
+            </div>
+            <div class="col border currentTemp">
+                <div class="row">
+                    <div>
+                        <img src="./assets/up_arrow_block.png" alt="">
+                        <p class="LabelTxt">High:</p>
+                        <p class="LabelTxt" id="highTempCurr">62°F</p>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div>
+                        <img src="./assets/down_arrow_block.png" alt="">
+                        <p class="LabelTxt">Low:</p>
+                        <p class="LabelTxt" id="lowTempCurr">60°F</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <img src="./assets/water_drop.png" alt="">
+                        <p class="LabelTxt">Humidity:</p>
+                        <p class="LabelTxt" id="humidity">42%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col border currentTemp">
+                <div class="row">
+                    <div>
+                        <img src="./assets/wind.png" alt="">
+                        <p class="LabelTxt">Wind:</p>
+                        <p class="LabelTxt" id="wind">5.75MPH</p>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div>
+                        <img src="./assets/up_arrow.png" alt="">
+                        <p class="LabelTxt">Sunrise:</p>
+                        <p class="LabelTxt" id="sunrise">7AM</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <img src="./assets/down_arrow.png" alt="">
+                        <p class="LabelTxt">Sunset:</p>
+                        <p class="LabelTxt" id="sunset">4PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="./script/app.js"></script>
+</body>
+
+</html>

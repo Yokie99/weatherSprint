@@ -1,0 +1,35 @@
+body{
+    background-color: #98BEEC;
+    font-family: 'Amaranth';
+}
+
+.logo{
+    width: 63px;
+    height: 63px;
+    
+}
+
+.navTxt{
+    font-size: 30px;
+}
+.accordion{
+    --bs-accordion-active-bg: #7572EE;
+    --bs-accordion-bg: #7572EE;
+}
+
+#tempTxt{
+    font-size: 96px;
+}
+
+#feelsTxt{
+    font-size: 24px;
+}
+
+.currentTemp{
+    font-size: 30px;
+}
+
+.LabelTxt{
+    display: inline;
+}
+
